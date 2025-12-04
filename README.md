@@ -25,7 +25,9 @@ STEP 2: Select Your Budget Type
 Two Options Available:
 
 Budget Type Best For How It Works
+
 ABO (Ad Set Budget) Testing Phase You set budget for EACH ad set separately
+
 CBO (Campaign Budget) Scaling Phase Facebook distributes budget automatically
 
 ---
@@ -70,8 +72,11 @@ Two Placement Options:
 ✅ Manual Placements (For advanced users)
 
 · Facebook Feed
+
 · Instagram Stories
+
 · Messenger
+
 · Audience Network
 
 ---
@@ -81,11 +86,13 @@ STEP 6: Set Budget & Schedule
 Budget Options:
 
 · Daily Budget → Fixed amount per day
+
 · Lifetime Budget → Total amount for campaign duration
 
 Schedule:
 
 · Start date: [Select Date]
+
 · End date: [Select Date] or Run Continuously
 
 ---
@@ -95,6 +102,7 @@ STEP 7: Optimization Settings
 Two Key Settings:
 
 1. Conversion Location → Website, Messenger, or App
+   
 2. Optimization Event → "Purchase", "Lead", "Add to Cart"
 
 ---
@@ -108,8 +116,11 @@ STEP 8: Choose Ad Format
 Three Format Options:
 
 Format Best For Example Use
+
 Single Image Simple offers Product promotion
+
 Video Storytelling Brand awareness
+
 Carousel Multiple products E-commerce showcase
 
 ---
@@ -130,8 +141,11 @@ STEP 10: Add Destination URL
 Where should users go?
 
 · Landing page
+
 · Website
+
 · WhatsApp link
+
 · Product page
 
 ---
@@ -145,11 +159,17 @@ STEP 11: Review Checklist
 Before Publishing:
 
 · Campaign objective matches your goal
+
 · Audience targeting is correct
+
 · Budget is set appropriately
+
 · All creatives are high-quality
+
 · Destination URLs work properly
+
 · Facebook Pixel is installed
+
 · Tracking is properly set up
 
 ---
@@ -167,7 +187,8 @@ Important Guidelines:
 
 📊 Budget Strategy: CBO vs ABO Explained
 
-Option 1: CBO (Campaign Budget Optimization)
+Option 1: 
+CBO (Campaign Budget Optimization)
 
 How it works:
 You set ONE budget at campaign level → Facebook distributes it automatically
@@ -188,7 +209,8 @@ Total Budget: $100/day
 
 ---
 
-Option 2: ABO (Ad Set Budget Optimization)
+Option 2:
+ABO (Ad Set Budget Optimization)
 
 How it works:
 You set SEPARATE budgets for each ad set
@@ -264,27 +286,37 @@ Action: Facebook optimizes budget automatically
 Tip 1: Start Small
 
 · Begin with 1 campaign
+
 · Test 3 different audiences
+
 · Use 3 creatives per audience
+
 · Budget: $10-20 per ad set daily
 
 Tip 2: Testing Strategy
 
 · Test one variable at a time
+
 · Give campaigns 3-5 days to perform
+
 · Don't make changes too quickly
 
 Tip 3: Scaling Strategy
 
 · Move winners to new CBO campaign
+
 · Expand audiences gradually
+
 · Increase budget slowly (20% at a time)
 
 Tip 4: Creative Best Practices
 
 · Use high-quality images/videos
+
 · Write clear benefit-driven copy
+
 · Include strong call-to-action
+
 · Test different formats
 
 ---
@@ -304,25 +336,37 @@ Tip 4: Creative Best Practices
 Setup Day
 
 · Choose campaign objective
+
 · Set ABO budget for testing
+
 · Create 3 ad sets with different audiences
+
 · Add 3 creatives to each ad set
+
 · Set daily budget: $10-20 per ad set
+
 · Review all settings
+
 · Publish campaign
 
 Day 3-5 Review
 
 · Check initial performance
+
 · Identify best performing ad set
+
 · Identify best performing creative
+
 · Note down winning combination
 
 Week 2 Action
 
 · Create new CBO campaign
+
 · Use winning audience + creative
+
 · Set higher budget
+
 · Add similar audiences
 
 ---
@@ -332,15 +376,21 @@ Week 2 Action
 Recommended Next Steps:
 
 1. Complete Setup → Follow the steps above
+   
 2. Monitor Daily → Check performance metrics
+ 
 3. Optimize Weekly → Adjust based on data
+   
 4. Scale Gradually → Increase successful campaigns
 
 Key Metrics to Watch:
 
 · Cost per result
+
 · Click-through rate
+
 · Conversion rate
+
 · Return on ad spend
 
 ---
