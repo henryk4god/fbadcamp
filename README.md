@@ -11,8 +11,11 @@ STEP 1: Choose Your Campaign Objective
 What do you want to achieve?
 
 · Conversions → For purchases, sign-ups, or registrations
+
 · Leads → For collecting email addresses or contact information
+
 · Traffic → For driving visitors to your website
+
 · Engagement → For getting likes, comments, and shares
 
 ---
@@ -180,6 +183,7 @@ Total Budget: $100/day
 ```
 
 ✅ Best for: Scaling successful campaigns
+
 ❌ Not ideal for: Initial testing phase
 
 ---
@@ -200,6 +204,8 @@ Campaign
 ```
 
 ✅ Best for: Testing new audiences
+
+
 ❌ Not ideal for: Scaling winners
 
 ---
