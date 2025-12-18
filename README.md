@@ -1,7 +1,7 @@
 # Facebook Ads Strategy Guides
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202024-blue)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202025-blue)
 ![Guides](https://img.shields.io/badge/Guides-2%20Complete%20Strategies-orange)
 
 A comprehensive collection of Facebook/Meta Ads strategies, featuring both modern AI-optimized approaches and traditional step-by-step guides.
