@@ -3,108 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Beginner's Guide - Facebook Ads Guides</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Beginner's Guide - Meta Ads Strategy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation Header -->
-        <header class="guide-header">
-            <div class="breadcrumb">
-                <a href="index.html" class="breadcrumb-link">
-                    <i class="fas fa-home"></i> Home
-                </a>
-                <span class="breadcrumb-separator">/</span>
-                <span class="breadcrumb-current">Complete Beginner's Guide</span>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-graduation-cap"></i> Facebook Ads Campaign Setup</h1>
+            <p class="subtitle">Complete Step-by-Step Guide for Beginners</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="beginners.html" class="active"><i class="fas fa-graduation-cap"></i> Beginner's Guide</a></li>
+                <li><a href="andromeda.html"><i class="fas fa-rocket"></i> Andromeda Strategy</a></li>
+                <li><a href="#print" onclick="window.print()"><i class="fas fa-print"></i> Print Guide</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="guide-header">
+            <div class="guide-meta">
+                <span class="level-badge beginner"><i class="fas fa-star"></i> Beginner Friendly</span>
+                <span class="updated-date"><i class="fas fa-calendar-alt"></i> Updated: January 2025</span>
             </div>
-            
-            <div class="header-actions">
-                <a href="andromeda.html" class="switch-guide-btn">
-                    <i class="fas fa-exchange-alt"></i> Switch to Andromeda Strategy
-                </a>
-                <button onclick="window.print()" class="print-btn">
-                    <i class="fas fa-print"></i> Print
+            <div class="print-actions">
+                <button onclick="window.print()" class="btn btn-primary">
+                    <i class="fas fa-print"></i> Print This Guide
                 </button>
             </div>
-        </header>
+        </div>
 
-        <!-- Main Guide Content -->
-        <main class="guide-content">
-            <!-- Guide Hero -->
-            <section class="guide-hero beginner-hero">
-                <div class="guide-badge">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Beginner Friendly</span>
-                </div>
-                <h1 class="guide-title">Facebook Ads Campaign Setup: Complete Step-by-Step Guide</h1>
-                <p class="guide-subtitle">📱 Facebook Ads Campaign Setup: Complete Step-by-Step Guide</p>
+        <article id="markdown-content" class="markdown-content">
+            <!-- Markdown content will be loaded here -->
+        </article>
+
+        <div class="navigation-buttons">
+            <a href="index.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <a href="andromeda.html" class="btn btn-primary">
+                Next: Andromeda Strategy <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Meta Ads Strategy Guides. Created for educational purposes.</p>
+            <p class="footer-links">
+                <a href="https://github.com/henryk4god/fbadcamp" target="_blank">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
+                <span class="separator">|</span>
+                <a href="index.html">Back to Home <i class="fas fa-home"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Load the markdown content
+        async function loadMarkdown() {
+            try {
+                const response = await fetch('beginners.md');
+                const markdown = await response.text();
+                const container = document.getElementById('markdown-content');
                 
-                <div class="guide-meta">
-                    <div class="meta-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Reading time: 20-25 minutes</span>
-                    </div>
-                    <div class="meta-item">
-                        <i class="fas fa-calendar"></i>
-                        <span>Updated: November 2024</span>
-                    </div>
-                    <div class="meta-item">
-                        <i class="fas fa-user"></i>
-                        <span>Level: Beginner</span>
-                    </div>
-                </div>
-            </section>
+                // Enhanced markdown to HTML conversion
+                let html = markdown
+                    // Headers
+                    .replace(/^# (.*$)/gim, '<h1 class="md-header">$1</h1>')
+                    .replace(/^## (.*$)/gim, '<h2 class="md-header">$1</h2>')
+                    .replace(/^### (.*$)/gim, '<h3 class="md-header">$1</h3>')
+                    
+                    // Bold and italic
+                    .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+                    .replace(/\*(.*?)\*/gim, '<em>$1</em>')
+                    
+                    // Code blocks
+                    .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+                    .replace(/`(.*?)`/g, '<code>$1</code>')
+                    
+                    // Lists
+                    .replace(/^\d+\.\s+(.*$)/gim, '<li>$1</li>')
+                    .replace(/^-\s+(.*$)/gim, '<li>$1</li>')
+                    
+                    // Tables (basic support)
+                    .replace(/\|(.*)\|/g, function(match) {
+                        return '<tr>' + match.split('|').slice(1, -1).map(cell => 
+                            `<td>${cell.trim()}</td>`
+                        ).join('') + '</tr>';
+                    })
+                    
+                    // Horizontal rules
+                    .replace(/^---$/gim, '<hr>')
+                    
+                    // Line breaks
+                    .replace(/\n\n/g, '</p><p>');
+                
+                // Wrap lists
+                html = html.replace(/(<li>.*?<\/li>\s*)+/g, '<ul>$&</ul>');
+                
+                // Wrap tables
+                html = html.replace(/(<tr>.*?<\/tr>\s*)+/g, '<table>$&</table>');
+                
+                // Final wrap in paragraphs
+                container.innerHTML = '<div class="md-paragraphs">' + html + '</div>';
+                
+            } catch (error) {
+                console.error('Error loading markdown:', error);
+                document.getElementById('markdown-content').innerHTML = 
+                    '<p class="error">Error loading guide content. Please try again later.</p>';
+            }
+        }
 
-            <!-- Add all your beginner guide content here following the same structure as andromeda.html -->
-            <!-- You can use the same CSS classes for consistency -->
-            <!-- I'll show you how to structure the first section as an example -->
-
-            <!-- Quick Start Section -->
-            <section class="content-section">
-                <div class="section-header">
-                    <h2><i class="fas fa-bolt"></i> 🎯 Quick Start: Beginner-Friendly Setup</h2>
-                </div>
-                <div class="section-content">
-                    <div class="intro-box">
-                        <p>Welcome to the complete beginner's guide to Facebook Ads! This guide will walk you through every step of setting up your first successful campaign.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Phase 1: Campaign Setup -->
-            <section class="content-section">
-                <div class="section-header phase-header">
-                    <div class="phase-number">Phase 1</div>
-                    <h2>Campaign Setup</h2>
-                </div>
-                <div class="section-content">
-                    <!-- Add your step-by-step content here -->
-                    <!-- Use the same step-card structure as in andromeda.html -->
-                </div>
-            </section>
-
-            <!-- Continue with all the sections from your original beginner's guide -->
-            
-        </main>
-
-        <!-- Bottom Navigation -->
-        <footer class="guide-footer">
-            <div class="footer-navigation">
-                <a href="index.html" class="nav-button home-button">
-                    <i class="fas fa-home"></i>
-                    <span>Back to Home</span>
-                </a>
-                <a href="andromeda.html" class="nav-button switch-button">
-                    <i class="fas fa-exchange-alt"></i>
-                    <span>Switch to Andromeda Strategy</span>
-                </a>
-            </div>
-            <div class="footer-info">
-                <p><i class="fas fa-info-circle"></i> Guide last updated: November 2024 | Perfect for first-time advertisers</p>
-            </div>
-        </footer>
-    </div>
+        document.addEventListener('DOMContentLoaded', loadMarkdown);
+    </script>
 </body>
 </html>
